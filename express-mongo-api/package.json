@@ -1,15 +1,18 @@
 {
   "name": "express-mongo-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "express mongo api",
+  "main": "nodemon server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/server.js"
+    "test": "run test"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "express",
+    "mongo",
+    "api"
+  ],
+  "author": "Hany Ali",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",

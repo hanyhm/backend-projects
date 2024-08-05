@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
 const userRoutes = require('./routes/userRoutes');
 const errorHandler = require('./middlewares/errorHandler');
+require('dotenv').config();
 
 const app = express();
 
@@ -18,4 +19,9 @@ app.use('/api', userRoutes);
 // Error Handling Middleware
 app.use(errorHandler);
 
-module.exports = app;
+const port = process.env.PORT || 5000;
+
+// Start the server
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
